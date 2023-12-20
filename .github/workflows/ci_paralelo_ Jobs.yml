@@ -1,4 +1,4 @@
-name: End-to-end tests - Sequencial
+name: End-to-end tests - Sequencial com Jobs
 on: push
 jobs:
   cypress01:
