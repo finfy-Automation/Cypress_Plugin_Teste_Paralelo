@@ -1,7 +1,7 @@
 name: End-to-end tests - Sequencial
 on: push
 jobs:
-  cypress-run:
+  cypress01:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -10,6 +10,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run cy:spec1
+  cypress02:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,6 +18,7 @@ jobs:
       - name: Run split Cypress tests 🧪
         uses: cypress-io/github-action@v6
         with:
-          command: npm run cy:spec1
+          command: npm run cy:spec2
+
 
         
