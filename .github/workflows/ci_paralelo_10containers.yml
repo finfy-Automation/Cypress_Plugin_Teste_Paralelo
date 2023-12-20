@@ -2,7 +2,7 @@ name: End-to-end tests - Paralelo - 10 Containers
 on: push
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     # run 10 copies of the current job in parallel
     strategy:
       fail-fast: false

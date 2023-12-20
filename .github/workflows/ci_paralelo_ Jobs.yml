@@ -9,6 +9,14 @@ jobs:
       - name: Run split Cypress tests 🧪
         uses: cypress-io/github-action@v6
         with:
-          command: npm run test
+          command: npm run cy:spec1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run split Cypress tests 🧪
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run cy:spec1
 
         

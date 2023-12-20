@@ -5,7 +5,9 @@
   "main": "cypress.config.js",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run"
+    "test": "cypress run",
+    "cy:spec1": "cypress run --spec 'cypress/e2e/1-getting-started/*' ",
+    "cy:spec2": "cypress run --spec 'cypress/e2e/2-advanced-examples/*' "
   },
   "keywords": [
     "cypress-io",
