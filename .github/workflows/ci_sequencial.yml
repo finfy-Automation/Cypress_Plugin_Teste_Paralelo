@@ -1,0 +1,14 @@
+name: End-to-end tests - Sequencial
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run split Cypress tests 🧪
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run test
+
+        
